@@ -6,8 +6,8 @@ def cosine_similarity(a, b):
     Returns: float in [-1, 1]
     """
     # Write code here
-    a = np.asarray(a)
-    b = np.asarray(b)
+    a = np.asarray(a, float)
+    b = np.asarray(b, float)
 
     if np.linalg.norm(a) == 0 or np.linalg.norm(b) == 0:
         return 0
