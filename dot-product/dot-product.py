@@ -5,12 +5,6 @@ def dot_product(x, y):
     Compute the dot product of two 1D arrays x and y.
     Must return a float.
     """
-    # Write code here
-    if len(x) != len(y):
-        raise ValueError()
-    
-    total = 0
-    for x_i, y_i in zip(x, y):
-        total += x_i * y_i
-
-    return total
+    x = np.asarray(x, dtype=float)
+    y = np.asarray(y, dtype=float)
+    return float(np.dot(x, y))
